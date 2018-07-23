@@ -26,7 +26,7 @@ class ViewController: UITableViewController {
         self.refreshCtrl = UIRefreshControl()
         self.refreshCtrl.addTarget(self, action: #selector(ViewController.refreshTableView), for: .valueChanged)
         self.refreshControl = self.refreshCtrl
-        
+        print("cache")
         self.tableData = []
         self.cache = NSCache()
 
